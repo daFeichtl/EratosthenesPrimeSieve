@@ -12,6 +12,8 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
 
     @Override
     public void printPrimes() {
+        for (int i = 0; i < max; i++) {
 
+        }
     }
 }
