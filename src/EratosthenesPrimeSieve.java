@@ -27,4 +27,11 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
             }
         }
     }
+
+    //Beispiel 2
+
+    @Override
+    public void primeSieve(int max) {
+        
+    }
 }
