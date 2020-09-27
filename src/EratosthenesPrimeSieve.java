@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class EratosthenesPrimeSieve implements PrimeSieve{
@@ -34,9 +35,7 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
     public void primeSieve() {
         printPrimes();
         boolean[] checkVal = new boolean[max];
-        for (int i = 0; i < checkVal.length; i++) {
-            checkVal[i] = true;
-        }
+        Arrays.fill(checkVal, true);
         for (int i = 0; i < max / 2; i++) {
             for (int j = 0; j < max / 2; j++) {
                 if(j>max)
