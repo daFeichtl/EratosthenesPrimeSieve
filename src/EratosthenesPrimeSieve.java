@@ -33,13 +33,16 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
     @Override
     public void primeSieve() {
         printPrimes();
-        boolean[] chechVal = new boolean[max];
+        boolean[] checkVal = new boolean[max];
+        for (int i = 0; i < checkVal.length; i++) {
+            checkVal[i] = true;
+        }
         for (int i = 0; i < max / 2; i++) {
             for (int j = 0; j < max / 2; j++) {
                 if(j>max)
                     break;
                 int num = primes.get(i)+primes.get(j);
-                if (num%2==0 && chechVal[num]){
+                if (num%2==0 && checkVal[num]){
 
                 }
             }
