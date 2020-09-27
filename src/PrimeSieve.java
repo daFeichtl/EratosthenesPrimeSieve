@@ -3,5 +3,5 @@ public interface PrimeSieve {
 
     public void printPrimes();
 
-    public void primeSieve(int max);
+    public void primeSieve();
 }

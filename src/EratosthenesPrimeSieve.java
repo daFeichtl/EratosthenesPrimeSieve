@@ -1,8 +1,9 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class EratosthenesPrimeSieve implements PrimeSieve{
     int max;
-    int[] primes = new int[1000];
-    int primesCounter=0;
-
+    List<Integer> primes = new ArrayList<>();
     public static void main(String[] args) {
         System.out.println(new EratosthenesPrimeSieve(100).isPrime(12));
         System.out.println(new EratosthenesPrimeSieve(100).isPrime(11));
@@ -22,8 +23,7 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
         for (int i = 0; i < max; i++) {
             if((i % 2) != 0 && (i % 3) != 0){
                 System.out.println(i);
-                primes[primesCounter]=i;
-                primesCounter++;
+                primes.add(i);
             }
         }
     }
@@ -31,7 +31,14 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
     //Beispiel 2
 
     @Override
-    public void primeSieve(int max) {
-        
+    public void primeSieve() {
+        printPrimes();
+        boolean[] chechVal = new boolean[max];
+        for (int i = 0; i < max / 2; i++) {
+            for (int j = 0; j < max / 2; j++) {
+
+            }
+        }
     }
+
 }
