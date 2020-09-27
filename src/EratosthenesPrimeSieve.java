@@ -39,6 +39,9 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
                 if(j>max)
                     break;
                 int num = primes.get(i)+primes.get(j);
+                if (num%2==0 && chechVal[num]){
+
+                }
             }
             if(i>max)
                 break;
