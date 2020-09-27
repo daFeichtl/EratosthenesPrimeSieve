@@ -36,8 +36,12 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
         boolean[] chechVal = new boolean[max];
         for (int i = 0; i < max / 2; i++) {
             for (int j = 0; j < max / 2; j++) {
-
+                if(j>max)
+                    break;
+                int num = primes.get(i)+primes.get(j);
             }
+            if(i>max)
+                break;
         }
     }
 
