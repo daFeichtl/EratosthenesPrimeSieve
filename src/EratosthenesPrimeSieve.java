@@ -42,7 +42,7 @@ public class EratosthenesPrimeSieve implements PrimeSieve{
                     break;
                 int num = primes.get(i)+primes.get(j);
                 if (num%2==0 && checkVal[num]){
-
+                    System.out.println(num+" = "+primes.get(i)+" + "+primes.get(j));
                 }
             }
             if(i>max)
